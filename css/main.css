@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.calc {
+    width: 300px;
+    height: 500px;
+    background-color: rgba(96, 155, 231, 0.734);
+    margin: 100px auto;
+    border: 1px solid rgb(56, 114, 190);
+    box-shadow: 4px 4px 4px rgb(48, 96, 158);
+    border-radius: 5%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 18px;
+}
+
+.calc-screen {
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 20px;
+}
+.calc-screen p {
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.calc-btn {
+    display: grid;
+    grid-template-areas: 
+    "ac plus-minus percent division"
+    "seven eight nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+    background-color: rgb(96, 155, 231);
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.btn:active {
+    filter: brightness(80%);
+}
+
+.btn.bg-grey {
+   background-color:rgb(120 153 195 / 62%); 
+}
+
+.btn.bg-dark {
+   background-color: rgb(48, 96, 158); 
+}
